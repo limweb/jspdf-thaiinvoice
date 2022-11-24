@@ -1,28 +1,21 @@
-<template>
-  <div class="bg-green-500 text-red" style="background-color: coral">
-    Header
-  </div>
-  <Invoice />
-  <div class="bg-red-200">Footer</div>
-</template>
-
 <script>
-import Invoice from "./components/Invoice.vue";
+import About from './About.vue'
+import Home from './Home.vue'
 export default {
-  name: "App",
   components: {
-    Invoice,
+    About,
+    Home,
   },
-};
+}
 </script>
 
+<template>
+  <div id="app" flex class="w-77px">
+    <About />
+    <Home />
+  </div>
+</template>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
